@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/backg"
+    android:orientation="vertical"
+
+    tools:context="sg.edu.rp.c346.identifytheanimal.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif-monospace"
+        android:text="Who am I?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_alignBottom="@+id/btnSubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:weightSum="0.5">
+
+
+        <ImageButton
+            android:id="@+id/imgAnimal"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_weight="0.09"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/background_light"
+            android:elevation="22dp"
+            android:paddingTop="4dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bear" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imgAnimal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="172dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="9dp"-->
+        <!--android:paddingTop="4dp"-->
+        <!--android:layout_weight="0.07" />-->
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/soundButton"-->
+        <!--android:src="@drawable/ic_sound"-->
+        <!--android:background="#1A2421"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_weight="0.07"-->
+        <!--android:text="Tap here for sound!" />-->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:layout_weight="0.10"
+            android:fontFamily="serif-monospace"
+            android:text="Tap Me!"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="visible" />
+
+        <GridView
+            android:id="@+id/gridViewAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_weight="0.05"
+            android:columnWidth="40dp"
+            android:horizontalSpacing="2dp"
+            android:numColumns="auto_fit"
+            android:padding="4dp"
+            android:rowCount="1"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp" />
+
+        <GridView
+            android:id="@+id/gridViewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_weight="0.13"
+            android:columnWidth="40dp"
+            android:horizontalSpacing="2dp"
+            android:numColumns="5"
+            android:padding="4dp"
+            android:rowCount="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Submit" />
+
+
+</RelativeLayout>
